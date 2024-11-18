@@ -1,0 +1,11 @@
+.button {
+   @apply bg-ascent px-6 text-white min-w-[150px]
+   flex items-center justify-center rounded-[50px]
+   font-medium text-base;
+}
+.button-small {
+   @apply min-h-[50px];
+}
+.button-normal {
+   @apply min-h-[60px];
+}

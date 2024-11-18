@@ -1,0 +1,112 @@
+.header {
+   @apply h-full w-full;
+}
+.wrapper {
+   @apply max-w-[1270px] px-container mx-auto;
+}
+.flex-block {
+   @apply flex items-center gap-x-2;
+}
+
+.header-info {
+   @apply bg-ascent h-10;
+}
+.info-body {
+   @apply h-full flex items-center justify-between;
+}
+.info-item {
+   @apply flex items-center gap-x-2 text-white;
+   & > svg {
+      @apply size-[18px];
+   }
+}
+.white-text {
+   @apply text-sm;
+}
+.contacts {
+   @apply flex items-center gap-x-8;
+}
+
+.header-body,
+.header-wrapper,
+.header-content {
+   @apply h-20 min-h-20 w-full;
+}
+.header-wrapper {
+   @apply fixed md:top-10 top-0 left-0 z-50;
+}
+.header-content {
+   @apply flex items-center max-lg:justify-between min-h-full;
+}
+.nav {
+   @apply lg:flex lg:items-center block;
+}
+.nav-item {
+   @apply lg:py-3 lg:px-4 py-1 px-2
+   rounded-[30px];
+   @media (min-width: 1024px) {
+      &._active {
+         @apply bg-blue-ascent/30;
+      }
+   }
+}
+.menu {
+   @apply lg:grow lg:basis-1/2 lg:shrink;
+}
+.home {
+   @apply lg:grow-0 lg:shrink-0;
+}
+.actions {
+   @apply lg:grow lg:basis-1/2 lg:shrink
+   flex items-center justify-end gap-x-5;
+}
+
+.burger {
+   @apply relative h-5 w-8 lg:hidden z-[80] cursor-pointer;
+}
+.burger::after,
+.burger::before,
+.burger > span {
+   @apply absolute content-[''] left-0 w-full h-[2px]
+   bg-dark transition-all;
+}
+.burger::before {
+   @apply top-0;
+}
+.burger::after {
+   @apply bottom-0;
+}
+.burger > span {
+   @apply top-[calc(50%-1px)];
+}
+.burger._open {
+   & > span {
+      @apply scale-0 bg-white;
+   }
+   &.burger::before {
+      @apply top-[calc(50%-1px)] rotate-45 bg-white;
+   }
+   &.burger::after {
+      @apply top-[calc(50%-1px)] -rotate-45 bg-white;
+   }
+}
+
+@media (max-width: 1024px) {
+   .menu {
+      @apply fixed top-0 -right-full z-[70] block h-full w-[230px]
+      pr-container sm:pl-8 pl-6 pt-20 transition-all bg-ascent;
+   }
+   .header-content._open::after {
+      @apply content-[''] fixed top-0 right-0 z-[60] h-full w-full
+      bg-black/50 transition-colors;
+   }
+   .menu._open {
+      @apply right-0;
+   }
+   .nav {
+      @apply pt-10;
+   }
+   .nav-item {
+      @apply text-white text-2xl mb-4 last:mb-0;
+   }
+}

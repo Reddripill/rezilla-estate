@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+   @apply h-full w-full text-light-dark bg-white;
+}
+body._lock-scroll {
+   @apply overflow-hidden;
+}
+
+.wrapper {
+   @apply h-full flex flex-col;
+}
+.main {
+   @apply grow mt-20;
+}
+.container {
+   @apply max-w-[1455px] px-container mx-auto;
+}
+/* .section {
+   @apply md:mb-32 mb-16;
+} */
+
+/* h1 {
+   @apply xl:text-7xl lg:text-6xl sm:text-5xl
+   text-4xl xl:leading-[86px] font-medium;
+}
+h2 {
+   @apply xl:text-6xl lg:text-5xl sm:text-4xl
+   text-3xl xl:leading-[78px] font-medium;
+}
+h3 {
+   @apply lg:text-4xl sm:text-3xl text-2xl;
+}
+h4 {
+   @apply text-xl font-bold;
+}
+.uppercased-title {
+   @apply lg:text-base text-sm uppercase leading-6;
+}
+.text {
+   @apply lg:text-lg sm:text-base text-sm text-regular;
+} */
+
+.button-text {
+   @apply font-medium;
+}
+.button-text-white {
+   @apply font-medium text-white;
+}
+.button-text-blue {
+   @apply font-medium text-blue-ascent;
+}

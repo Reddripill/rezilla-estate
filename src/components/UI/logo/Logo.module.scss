@@ -1,0 +1,9 @@
+.flex-block {
+   @apply flex items-center gap-x-2;
+}
+.logo {
+   @apply p-3 rounded-full bg-ascent text-white;
+}
+.label {
+   @apply text-xl text-[#1E1E1E] font-semibold;
+}
