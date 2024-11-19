@@ -33,7 +33,8 @@
    @apply h-20 min-h-20 w-full;
 }
 .header-wrapper {
-   @apply fixed md:top-10 top-0 left-0 z-50;
+   @apply fixed md:top-10 top-0 left-0 z-50 bg-white
+   shadow-header;
 }
 .header-content {
    @apply flex items-center max-lg:justify-between min-h-full;

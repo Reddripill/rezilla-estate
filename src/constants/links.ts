@@ -1,10 +1,34 @@
-export interface ILink {
+export type LinkType = {
    label: string;
    link: string;
    header?: boolean;
-}
+};
 
-export const links: ILink[] = [
+export type CountryLinkType = Omit<LinkType, "header">;
+
+export const countries: CountryLinkType[] = [
+   {
+      label: "Canada",
+      link: "/",
+   },
+   {
+      label: "United States",
+      link: "/",
+   },
+   {
+      label: "Germany",
+      link: "/",
+   },
+   {
+      label: "Africa",
+      link: "/",
+   },
+   {
+      label: "India",
+      link: "/",
+   },
+];
+export const links: LinkType[] = [
    {
       label: "Home",
       link: "/",
