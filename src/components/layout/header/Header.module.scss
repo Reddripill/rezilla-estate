@@ -61,6 +61,9 @@
    @apply lg:grow lg:basis-1/2 lg:shrink
    flex items-center justify-end gap-x-5;
 }
+.button {
+   @apply grow-0;
+}
 
 .burger {
    @apply relative h-5 w-8 lg:hidden z-[80] cursor-pointer;

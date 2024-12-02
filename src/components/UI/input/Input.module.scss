@@ -1,7 +1,7 @@
 .input {
    @apply w-full h-[60px] bg-white flex items-center
    justify-between rounded-[30px] pl-5 pr-[5px] gap-x-4
-   shadow-input;
+   shadow-main;
 }
 .input-field {
    @apply appearance-none bg-transparent outline-none

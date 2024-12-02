@@ -14,10 +14,10 @@ body._lock-scroll {
    @apply h-full flex flex-col;
 }
 .main {
-   @apply grow mt-20;
+   @apply grow;
 }
 .container {
-   @apply max-w-[1455px] px-container mx-auto;
+   @apply max-w-[1190px] px-container mx-auto;
 }
 /* .section {
    @apply md:mb-32 mb-16;
@@ -41,16 +41,37 @@ h4 {
    @apply lg:text-base text-sm uppercase leading-6;
 }
  */
+.paragraph {
+   @apply md:text-base text-sm md:leading-7
+   leading-5 text-paragraph;
+}
+.small-text {
+   @apply text-sm leading-[22px];
+}
+h1 {
+   @apply lg:text-6xl md:text-5xl text-4xl
+   lg:leading-[60px] font-semibold text-dark;
+}
 h4 {
    @apply text-xl font-bold text-dark;
 }
 
 .button-text {
-   @apply font-medium;
+   @apply font-medium leading-none;
 }
 .button-text-white {
-   @apply font-medium text-white;
+   @apply font-medium text-white leading-none;
 }
 .button-text-blue {
-   @apply font-medium text-blue-ascent;
+   @apply font-medium text-blue-ascent leading-none;
 }
+
+.gradient {
+   @apply bg-gradient-to-b from-[#4CC9F0]/30 to-blue-ascent opacity-30;
+}
+.gradient-reverse {
+   @apply bg-gradient-to-bl from-blue-ascent to-[#4CC9F0]/30;
+}
+/* .gradient {
+   @apply bg-gradient-to-b from-[rgb(248_250_254)] to-blue-ascent/30;
+} */

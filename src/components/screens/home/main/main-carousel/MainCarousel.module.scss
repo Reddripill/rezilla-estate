@@ -1,0 +1,38 @@
+.swiper {
+   @apply relative z-[4] w-full h-full;
+}
+.swiper-wrapper {
+   @apply rounded-[20px] overflow-hidden mb-2;
+}
+.swiper-item {
+   @apply pb-[63%] relative w-full h-full
+   rounded-[20px] overflow-hidden;
+}
+.arrow-prev,
+.arrow-next {
+   @apply absolute top-1/2 z-[5] -translate-y-1/2
+   size-10 rounded-full bg-white
+   text-[#AAAAAA] flex items-center justify-center
+   cursor-pointer shadow-main;
+   &::after {
+      @apply text-lg;
+   }
+}
+.arrow-prev {
+   @apply left-0 md:-translate-x-1/2;
+}
+.arrow-next {
+   @apply right-0 md:translate-x-1/2;
+}
+.swiper-button-disabled {
+   @apply bg-white/70;
+}
+.bullets {
+   @apply w-full flex justify-between gap-x-8;
+}
+.swiper-pagination-bullet {
+   @apply grow h-1 bg-white rounded-2xl overflow-hidden;
+}
+.swiper-pagination-bullet-active {
+   @apply bg-ascent;
+}

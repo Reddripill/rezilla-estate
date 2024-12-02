@@ -131,14 +131,16 @@ const Header = () => {
                         </Link>
                      )}
                      {!isMobile && (
-                        <Button size="small">
-                           <div className={styles["flex-block"]}>
-                              <House />
-                              <div className="button-text-white">
-                                 Add Listing
+                        <div className={styles.button}>
+                           <Button size="small">
+                              <div className={styles["flex-block"]}>
+                                 <House />
+                                 <div className="button-text-white">
+                                    Add Listing
+                                 </div>
                               </div>
-                           </div>
-                        </Button>
+                           </Button>
+                        </div>
                      )}
                      <div
                         className={cn(styles.burger, {

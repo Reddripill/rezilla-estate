@@ -1,0 +1,45 @@
+.search-form {
+   @apply w-full bg-white rounded-[20px]
+   shadow-block;
+}
+.switch {
+   @apply flex items-center border-b gap-x-9
+   border-[#AAAAAA] lg:pt-10 pt-7 pb-0;
+}
+.switch,
+.body {
+   @apply lg:px-10 px-6;
+}
+.switch-item {
+   @apply lg:pb-7 pb-5 basis-1/2 text-center cursor-pointer;
+   &._active {
+      @apply relative text-purple-ascent;
+      &::before {
+         @apply content-[''] absolute bottom-[-1px] left-0
+         w-full h-1 bg-ascent rounded-3xl;
+      }
+   }
+}
+.body {
+   @apply lg:pt-12 lg:pb-14 py-10;
+}
+.content {
+   @apply lg:mb-16 mb-10;
+}
+.form {
+   @apply mb-5 flex flex-col lg:gap-y-8 gap-y-5;
+}
+.form-item {
+   @apply lg:h-[60px] h-[50px];
+}
+.advanced {
+   @apply flex items-center gap-x-3
+   text-purple-ascent cursor-pointer;
+}
+
+.action {
+   @apply w-full;
+}
+.button {
+   @apply flex items-center gap-x-3;
+}
