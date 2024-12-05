@@ -19,10 +19,10 @@
    }
 }
 .arrow-prev {
-   @apply left-0 md:-translate-x-1/2;
+   @apply left-0 lg:-translate-x-1/2;
 }
 .arrow-next {
-   @apply right-0 md:translate-x-1/2;
+   @apply right-0 lg:translate-x-1/2;
 }
 .swiper-button-disabled {
    @apply bg-white/70;

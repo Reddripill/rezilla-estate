@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import styles from "./SearchForm.module.scss";
 import dynamic from "next/dynamic";
 import Button from "@/components/UI/button/Button";
@@ -18,13 +18,24 @@ const FormSelect = dynamic(
 );
 
 const SearchForm = () => {
+   const [switchValue, setSwitchValue] = useState<"sale" | "rent">("sale");
    return (
       <div className={styles["search-form"]}>
          <div className={styles.switch}>
-            <div className={cn(styles["switch-item"], styles["_active"])}>
+            <div
+               className={cn(styles["switch-item"], {
+                  [styles["_active"]]: switchValue === "sale",
+               })}
+               onClick={() => setSwitchValue("sale")}
+            >
                <div className="button-text">For Sale</div>
             </div>
-            <div className={styles["switch-item"]}>
+            <div
+               className={cn(styles["switch-item"], {
+                  [styles["_active"]]: switchValue === "rent",
+               })}
+               onClick={() => setSwitchValue("rent")}
+            >
                <div className="button-text">For Rent</div>
             </div>
          </div>

@@ -1,5 +1,5 @@
 .main {
-   @apply relative md:pt-24 pt-12 md:pb-28;
+   @apply relative md:pt-24 pt-12 md:pb-28 md:mb-0 mb-[70px];
 }
 .wrapper {
    @apply relative z-[2];
@@ -16,7 +16,7 @@
    @apply min-w-0 md:max-w-[50%];
 }
 .search {
-   @apply w-full max-w-[540px] md:min-w-[320px]
+   @apply basis-[420px] w-full max-md:max-w-[540px] md:min-w-[320px]
    md:mt-auto max-md:mx-auto;
 }
 .content-label {

@@ -19,6 +19,9 @@ const Header = () => {
    const closeMenu = () => {
       setIsOpen(false);
    };
+   const clickHandler = () => {
+      if (isOpen) closeMenu();
+   };
    useOutside([menuRef, burgerRef], closeMenu);
    useEffect(() => {
       if (isOpen) {
@@ -78,6 +81,7 @@ const Header = () => {
                                  className={cn(styles["nav-item"], {
                                     [styles["_active"]]: index === 0,
                                  })}
+                                 onClick={clickHandler}
                               >
                                  <Link
                                     href={item.link}

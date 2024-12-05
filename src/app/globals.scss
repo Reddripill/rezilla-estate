@@ -19,10 +19,13 @@ body._lock-scroll {
 .container {
    @apply max-w-[1190px] px-container mx-auto;
 }
-/* .section {
-   @apply md:mb-32 mb-16;
-} */
+.section {
+   @apply md:mb-60 mb-24;
+}
 
+h4 {
+   @apply text-xl font-semibold leading-none;
+}
 /* h1 {
    @apply xl:text-7xl lg:text-6xl sm:text-5xl
    text-4xl xl:leading-[86px] font-medium;
@@ -53,7 +56,8 @@ h1 {
    lg:leading-[60px] font-semibold text-dark;
 }
 h4 {
-   @apply text-xl font-bold text-dark;
+   @apply md:text-xl text-base font-medium
+   max-md:leading-none text-dark;
 }
 
 .button-text {
