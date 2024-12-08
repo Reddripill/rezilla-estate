@@ -19,6 +19,7 @@ export default {
             "light-dark": "#2B2B2B",
             dark: "#0B090A",
             paragraph: "#808080",
+            light: "#EDF0FE",
          },
          padding: {
             container: "15px",
@@ -26,7 +27,7 @@ export default {
          boxShadow: {
             header:
                "rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px",
-            main: "4px 10px 5px 0 rgba(0, 0, 0, 0.05)",
+            main: "4px 10px 30px 0 rgba(0, 0, 0, 0.06)",
             block: "10px 30px 50px 0 rgba(0, 0, 0, 0.05)",
          },
          transitionDuration: {

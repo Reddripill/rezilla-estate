@@ -20,12 +20,13 @@ body._lock-scroll {
    @apply max-w-[1190px] px-container mx-auto;
 }
 .section {
-   @apply md:mb-60 mb-24;
+   @apply md:mb-40 mb-24;
+}
+.section-label {
+   @apply text-[#EDF0FE] text-xl tracking-[15%]
+   leading-none font-medium uppercase md:mb-10 mb-5;
 }
 
-h4 {
-   @apply text-xl font-semibold leading-none;
-}
 /* h1 {
    @apply xl:text-7xl lg:text-6xl sm:text-5xl
    text-4xl xl:leading-[86px] font-medium;
@@ -55,9 +56,13 @@ h1 {
    @apply lg:text-6xl md:text-5xl text-4xl
    lg:leading-[60px] font-semibold text-dark;
 }
+h2 {
+   @apply md:text-[40px] md:leading-[47px]
+   text-[28px] leading-none font-semibold;
+}
 h4 {
    @apply md:text-xl text-base font-medium
-   max-md:leading-none text-dark;
+   max-md:leading-none;
 }
 
 .button-text {
